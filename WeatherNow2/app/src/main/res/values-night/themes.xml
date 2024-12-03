@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme -->
+    <style name="Base.Theme.WeatherNow" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Dark theme customization -->
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryVariant">@color/dark_primary_variant</item>
+        <item name="colorAccent">@color/dark_accent</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="android:textColor">@color/dark_onBackground</item>
+
+        <!-- Remove android:colorSurface as it's private and causes linking errors -->
+        <!-- <item name="android:colorSurface">@color/dark_surface</item> -->
+
+        <item name="android:textColorPrimary">@color/dark_onPrimary</item>
+        <item name="android:textColorSecondary">@color/dark_onSurface</item>
+    </style>
+
+    <!-- Inheriting the base theme -->
+    <style name="Theme.WeatherNow" parent="Base.Theme.WeatherNow">
+        <!-- Add more customization if needed, or leave it empty -->
+    </style>
+
+</resources>

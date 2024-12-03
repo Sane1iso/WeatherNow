@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+
+    <TextView
+        android:id="@+id/theme_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dark_mode"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Switch
+        android:id="@+id/switch_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:contentDescription="@string/switch_to_toggle_dark_mode"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <!-- Notification Switch -->
+    <TextView
+        android:id="@+id/notifications_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_notifications"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Switch
+        android:id="@+id/switch_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:contentDescription="@string/switch_to_toggle_notification"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <!-- Unit Selector Spinner -->
+    <TextView
+        android:id="@+id/unit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_temperature_unit"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Language Selector Spinner -->
+    <TextView
+        android:id="@+id/language_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown"/>
+
+
+</LinearLayout>

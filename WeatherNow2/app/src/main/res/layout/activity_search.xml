@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Search Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_city_name"
+        android:textColor="@color/black"
+        android:paddingBottom="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_search_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:minHeight="48dp"
+            android:inputType="textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/btn_search_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search3"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorPrimary"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"/>
+
+    <!-- Image View for displaying city image -->
+    <ImageView
+        android:id="@+id/iv_city_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"/>
+
+    <!-- Back Home Button -->
+    <Button
+        android:id="@+id/btn_back_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_home"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"/>
+
+</LinearLayout>

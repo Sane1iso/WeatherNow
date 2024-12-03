@@ -1,0 +1,91 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    >
+
+    <!-- Email Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email2"
+        android:paddingBottom="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password2"
+        android:paddingBottom="12dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login2"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorPrimary"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        />
+
+    <!-- Sign Up with Google Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_google_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_with_google"
+        android:textColor="@color/black"
+        android:icon="@drawable/ic_google"
+        android:backgroundTint="@android:color/white"
+        android:strokeColor="@color/gray"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/btn_biometric_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_using_biometrics"
+        android:minHeight="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"/>
+
+
+    <!-- Sign Up Link -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:onClick="openSignUpActivity"
+        android:paddingTop="16dp"
+        android:text="@string/don_t_have_an_account_click_here"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+</LinearLayout>
